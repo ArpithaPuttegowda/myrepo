@@ -1,0 +1,27 @@
+install nodejs
+install vs code
+
+npm install -g create-react-app
+npm create-react-app myreactapp
+
+OR
+
+npx create-react-app myreactapp
+
+
+OR
+
+
+yarn install -g create-react-app
+yarn create-react-app myreactapp
+
+
+
+2 components
+Capital
+* class component
+class =>internally create an object
+*functional components
+fun=>call it
+
+//jsx=>javascript, html and xml (custom tag, userDefined tag)
