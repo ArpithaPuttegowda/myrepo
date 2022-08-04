@@ -6,14 +6,12 @@
 
 <script type="text/babel">
   function App() {
+    let myData = [1, 2, 3, 4, 5, 6];
     return (
       <div>
-        <Hellow></Hellow>
-        <Hellow></Hellow>
-        <Hellow></Hellow>
-        <Hellow></Hellow>
-        <Hellow></Hellow>
-        <Hellow></Hellow>
+        {myData.map((v, i) => {
+          return <Hellow />;
+        })}
       </div>
     );
   }
