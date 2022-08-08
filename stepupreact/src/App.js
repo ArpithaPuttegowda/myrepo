@@ -2,6 +2,10 @@ import Box from "./Components/Box";
 import "./App.css";
 import {Component} from "react";
 import BoxC from "./Components/BoxC";
+import Players from "./Components/Players";
+import PlayersF from "./Components/PlayersF";
+import Parent from "./Components/ChildToParent";
+// import Parent from "./Components/PtoC";
 
 // const App = () => {
 //   const myName = "StepUp";
@@ -26,28 +30,55 @@ import BoxC from "./Components/BoxC";
 //   );
 // };
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <div>
-          <BoxC n="1" l="abc" />
-          <BoxC n="2" />
-          <BoxC n="3" />
-        </div>
-        <div>
-          <BoxC />
-          <BoxC />
-          <BoxC />
-        </div>
-        <div>
-          <BoxC />
-          <BoxC />
-          <BoxC />
-        </div>
-      </>
-    );
-  }
-}
+// class App extends Component {
+//   render() {
+//     return (
+//       <>
+//         <div>
+//           <BoxC n="1" l="abc" />
+//           <BoxC n="2" />
+//           <BoxC n="3" />
+//         </div>
+//         <div>
+//           <BoxC n="4" />
+//           <BoxC n="5" />
+//           <BoxC n="6" />
+//         </div>
+//         <div>
+//           <BoxC n="7" />
+//           <BoxC n="8" />
+//           <BoxC n="9" />
+//         </div>
+//       </>
+//     );
+//   }
+// }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>Class Component</h1>
+//         <Players name="Sachin" loc="Mumbai" />
+//         <Players name="Dhoni" loc="Ranchi" />
+//         <Players name="Kohli" loc="Delhi" />
+//         <Players name="Panth" loc="karnataka" />
+
+//         <h1>Functional Component</h1>
+//         <PlayersF name="Sachin" loc="Mumbai" />
+//         <PlayersF name="Dhoni" loc="Ranchi" />
+//       </div>
+//     );
+//   }
+// }
+
+const App = () => {
+  return (
+    <div>
+      {/* <Parent />; */}
+      <Parent />
+    </div>
+  );
+};
 
 export default App;
