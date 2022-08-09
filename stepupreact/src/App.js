@@ -4,7 +4,9 @@ import {Component} from "react";
 import BoxC from "./Components/BoxC";
 import Players from "./Components/Players";
 import PlayersF from "./Components/PlayersF";
-import Parent from "./Components/ChildToParent";
+import {Parent} from "./Components/ChildToParentF";
+import Count from "./Components/Count";
+// import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
 // const App = () => {
@@ -76,7 +78,9 @@ const App = () => {
   return (
     <div>
       {/* <Parent />; */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <Parent /> */}
+      <Count />
     </div>
   );
 };

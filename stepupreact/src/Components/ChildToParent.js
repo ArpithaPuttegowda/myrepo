@@ -1,7 +1,7 @@
 import React from "react";
-class Parent extends React.Component {
-  getData = (data) => {
-    console.log(data, "getting data from child ");
+export class Parent extends React.Component {
+  getData = (d) => {
+    console.log(d, "getting data from child ");
   };
   render() {
     return (
@@ -34,5 +34,3 @@ class Child extends React.Component {
     );
   }
 }
-
-export default Parent;
