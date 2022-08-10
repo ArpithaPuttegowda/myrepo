@@ -16,7 +16,6 @@ export default class Count extends Component {
   };
 
   render() {
-    alert("RENDER");
     return (
       <div>
         <button onClick={this.incCount}>INC COUNT</button>

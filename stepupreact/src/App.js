@@ -6,6 +6,8 @@ import Players from "./Components/Players";
 import PlayersF from "./Components/PlayersF";
 import {Parent} from "./Components/ChildToParentF";
 import Count from "./Components/Count";
+import {CountF} from "./Components/CountF";
+import {TakeTheDataFromInput} from "./Components/TakeTheDataFromInput";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -80,7 +82,9 @@ const App = () => {
       {/* <Parent />; */}
       {/* <Parent /> */}
       {/* <Parent /> */}
-      <Count />
+      {/* <Count /> */}
+      {/* <CountF /> */}
+      <TakeTheDataFromInput />
     </div>
   );
 };

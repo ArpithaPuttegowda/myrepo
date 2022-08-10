@@ -4,3 +4,13 @@
     height: 100px;
     display: inline-block;
 }
+
+.cb{
+  color:blue ;
+}
+.cp{
+  color: pink;
+}
+.cr{
+  color: red;
+}
