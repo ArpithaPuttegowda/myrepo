@@ -8,6 +8,11 @@ import {Parent} from "./Components/ChildToParentF";
 import Count from "./Components/Count";
 import {CountF} from "./Components/CountF";
 import {TakeTheDataFromInput} from "./Components/TakeTheDataFromInput";
+import TakeTheDataC from "./Components/TakeTheDataC";
+import ControllledOnChange from "./Components/ControllledOnChange";
+import ContextExample from "./Components/ContextExample";
+import ContextAPIExample from "./Components/ContextAPI/ContextWithAPI";
+import {MyContext} from "./Components/ContextAPI/ContextApiF";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -84,7 +89,12 @@ const App = () => {
       {/* <Parent /> */}
       {/* <Count /> */}
       {/* <CountF /> */}
-      <TakeTheDataFromInput />
+      {/* <TakeTheDataFromInput /> */}
+      {/* <TakeTheDataC /> */}
+      {/* <ControllledOnChange /> */}
+      {/* <ContextExample /> */}
+      {/* <ContextAPIExample /> */}
+      <MyContext />
     </div>
   );
 };

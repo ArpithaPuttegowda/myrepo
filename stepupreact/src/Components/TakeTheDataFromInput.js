@@ -1,7 +1,7 @@
 import React, {createRef, useRef, useState} from "react";
 
 export const TakeTheDataFromInput = () => {
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState(100);
   const [cls, setCls] = useState("cr");
   const n1Ref = createRef(null);
   const n2Ref = createRef(null);
