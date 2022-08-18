@@ -13,6 +13,9 @@ import ControllledOnChange from "./Components/ControllledOnChange";
 import ContextExample from "./Components/ContextExample";
 import ContextAPIExample from "./Components/ContextAPI/ContextWithAPI";
 import {MyContext} from "./Components/ContextAPI/ContextApiF";
+import LifeCycleMethod from "./Components/lifeCycleMethodMounting";
+import LifeCycleUpdating from "./Components/LifeCycleUpdating";
+import LifeCycleUnMounting from "./Components/LifeCycleUnMounting";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -94,7 +97,10 @@ const App = () => {
       {/* <ControllledOnChange /> */}
       {/* <ContextExample /> */}
       {/* <ContextAPIExample /> */}
-      <MyContext />
+      {/* <MyContext /> */}
+      {/* <LifeCycleMethod /> */}
+      {/* <LifeCycleUpdating /> */}
+      <LifeCycleUnMounting />
     </div>
   );
 };
