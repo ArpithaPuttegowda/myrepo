@@ -16,6 +16,9 @@ import {MyContext} from "./Components/ContextAPI/ContextApiF";
 import LifeCycleMethod from "./Components/lifeCycleMethodMounting";
 import LifeCycleUpdating from "./Components/LifeCycleUpdating";
 import LifeCycleUnMounting from "./Components/LifeCycleUnMounting";
+import Players1 from "./Components/Players1";
+import ErrorHandling from "./Components/ErrorHandling/ErrorHandling";
+import ReactPureComponent from "./Components/ReactPureComponent";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -100,7 +103,12 @@ const App = () => {
       {/* <MyContext /> */}
       {/* <LifeCycleMethod /> */}
       {/* <LifeCycleUpdating /> */}
-      <LifeCycleUnMounting />
+      {/* <LifeCycleUnMounting />
+      <Players1 name="sachin" loc="mumbai" />
+      <Players1 /> <Players1 /> */}
+      {/* <ErrorHandling /> */}
+      {/* <ContextAPIExample /> */}
+      <ReactPureComponent />
     </div>
   );
 };

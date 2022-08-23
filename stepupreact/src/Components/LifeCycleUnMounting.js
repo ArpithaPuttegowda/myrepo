@@ -13,7 +13,7 @@ export default class LifeCycleUnMounting extends Component {
   render() {
     return (
       <div>
-        {this.state.isChild && <Child />}
+        {this.state.isChild && <Child name={this.state.isChild} />}
         <button onClick={this.handleToggle}>Toggle</button>
       </div>
     );

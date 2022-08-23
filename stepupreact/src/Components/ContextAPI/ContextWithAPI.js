@@ -1,16 +1,17 @@
 import React, {Component} from "react";
+import ErrorBoundary from "../ErrorHandling/ErrorBoundary";
+import Hero from "../ErrorHandling/Hero";
 import {ctx} from "./myCtx";
 
 export default class ContextAPIExample extends Component {
-  constructor() {
-    super();
-    this.myData = {name: "Sachin", loc: "mumbai"};
-  }
   render() {
     return (
       <div>
-        <ctx.Provider value={this.myData}>
+        <ctx.Provider value={""}>
           <A />
+          <ErrorBoundary>
+            <Hero heroName="joker" />
+          </ErrorBoundary>
         </ctx.Provider>
       </div>
     );
