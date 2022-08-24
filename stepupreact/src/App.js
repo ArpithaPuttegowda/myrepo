@@ -19,6 +19,8 @@ import LifeCycleUnMounting from "./Components/LifeCycleUnMounting";
 import Players1 from "./Components/Players1";
 import ErrorHandling from "./Components/ErrorHandling/ErrorHandling";
 import ReactPureComponent from "./Components/ReactPureComponent";
+import ArgumentsOfSetState from "./Components/ArgumentsOfSetState";
+import ArgumentOfSetStateCB from "./Components/ArgumentOfSetStateCB";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -108,7 +110,9 @@ const App = () => {
       <Players1 /> <Players1 /> */}
       {/* <ErrorHandling /> */}
       {/* <ContextAPIExample /> */}
-      <ReactPureComponent />
+      {/* <ReactPureComponent /> */}
+      {/* <ArgumentsOfSetState /> */}
+      <ArgumentOfSetStateCB />
     </div>
   );
 };
