@@ -4,7 +4,7 @@ import {Component} from "react";
 import BoxC from "./Components/BoxC";
 import Players from "./Components/Players";
 import PlayersF from "./Components/PlayersF";
-import {Parent} from "./Components/ChildToParentF";
+// import {Parent} from "./Components/ChildToParentF";
 import Count from "./Components/Count";
 import {CountF} from "./Components/CountF";
 import {TakeTheDataFromInput} from "./Components/TakeTheDataFromInput";
@@ -21,6 +21,8 @@ import ErrorHandling from "./Components/ErrorHandling/ErrorHandling";
 import ReactPureComponent from "./Components/ReactPureComponent";
 import ArgumentsOfSetState from "./Components/ArgumentsOfSetState";
 import ArgumentOfSetStateCB from "./Components/ArgumentOfSetStateCB";
+import {Parent} from "./Components/CustomHooks/Parent";
+// import Parent from "./Components/HOC/Parent";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
 
@@ -112,7 +114,9 @@ const App = () => {
       {/* <ContextAPIExample /> */}
       {/* <ReactPureComponent /> */}
       {/* <ArgumentsOfSetState /> */}
-      <ArgumentOfSetStateCB />
+      {/* <ArgumentOfSetStateCB /> */}
+      {/* <Parent /> */}
+      <Parent />
     </div>
   );
 };
