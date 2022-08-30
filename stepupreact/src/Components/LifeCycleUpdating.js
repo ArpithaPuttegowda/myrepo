@@ -5,38 +5,43 @@ export default class LifeCycleUpdating extends Component {
     super();
     console.log("constructor");
     this.state = {
-      count: 0
+      count: 0,
+      name: "sachin"
     };
   }
   handleInc = () => {
     this.setState({
-      count: this.state.count + 1
+      count: this.state.count + 1,
+      name: "sachinllld"
     });
   };
-  static getDerivedStateFromProps() {
+  static getDerivedStateFromProps(nextProps, nextState) {
     console.log("getDerivedFromProps");
   }
 
-  shouldComponentUpdate() {
-    console.log("shouldComponentUpdate");
-    return true;
+  shouldComponentUpdate(nexProps, nextState) {
+    if (nextState.name !== this.state.name) {
+      return true;
+    }
+    return false;
   }
 
-  componentDidMount() {
-    console.log("componentDidMount");
-  }
-  getSnapshotBeforeUpdate() {
+  getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log("getSnapshotBeforeUpdate");
   }
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
+    debugger;
     console.log("componentDidUpdate");
   }
   render() {
-    console.log("render");
+    alert("Render");
     return (
       <div>
-        <button onClick={this.handleInc}>Inc Count</button>
-        <h1>{this.state.count}</h1>
+        <button onClick={this.handleInc}>Inc Count......</button>
+        <h1>
+          {this.state.count}
+          {this.state.name}
+        </h1>
       </div>
     );
   }

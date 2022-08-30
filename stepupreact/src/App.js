@@ -22,6 +22,10 @@ import ReactPureComponent from "./Components/ReactPureComponent";
 import ArgumentsOfSetState from "./Components/ArgumentsOfSetState";
 import ArgumentOfSetStateCB from "./Components/ArgumentOfSetStateCB";
 import {Parent} from "./Components/CustomHooks/Parent";
+import ComponentDidMountAjax from "./Components/ComponentDidMountAjax";
+import {UseEffectComponentDidMount} from "./Components/UseEffectComponentDidMount";
+import {UseEffectComponentDidUpdate} from "./Components/UseEffectComponentDidUpdate";
+import {ComponentWillUnmountUseEffect} from "./Components/ComponentWillUnmountUseEffect";
 // import Parent from "./Components/HOC/Parent";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
@@ -105,8 +109,8 @@ const App = () => {
       {/* <ContextExample /> */}
       {/* <ContextAPIExample /> */}
       {/* <MyContext /> */}
-      {/* <LifeCycleMethod /> */}
-      {/* <LifeCycleUpdating /> */}
+      {/* <LifeCycleMethod myName="StepUp" loc="karnataka" /> */}
+      {/* <LifeCycleUpdating color="green" /> */}
       {/* <LifeCycleUnMounting />
       <Players1 name="sachin" loc="mumbai" />
       <Players1 /> <Players1 /> */}
@@ -116,7 +120,11 @@ const App = () => {
       {/* <ArgumentsOfSetState /> */}
       {/* <ArgumentOfSetStateCB /> */}
       {/* <Parent /> */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <ComponentDidMountAjax /> */}
+      {/* <UseEffectComponentDidMount /> */}
+      {/* <UseEffectComponentDidUpdate /> */}
+      <ComponentWillUnmountUseEffect />
     </div>
   );
 };
