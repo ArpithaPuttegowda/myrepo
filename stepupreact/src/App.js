@@ -26,6 +26,10 @@ import ComponentDidMountAjax from "./Components/ComponentDidMountAjax";
 import {UseEffectComponentDidMount} from "./Components/UseEffectComponentDidMount";
 import {UseEffectComponentDidUpdate} from "./Components/UseEffectComponentDidUpdate";
 import {ComponentWillUnmountUseEffect} from "./Components/ComponentWillUnmountUseEffect";
+import OrderedList from "./Components/ListAndKeys/OrderedList";
+import UnorderedOrdered from "./Components/ListAndKeys/UnorderedOrdered";
+import {DropDown} from "./Components/ListAndKeys/DropDown";
+import {PlayerInfo} from "./Components/ListAndKeys/PlayerInfo";
 // import Parent from "./Components/HOC/Parent";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
@@ -124,7 +128,11 @@ const App = () => {
       {/* <ComponentDidMountAjax /> */}
       {/* <UseEffectComponentDidMount /> */}
       {/* <UseEffectComponentDidUpdate /> */}
-      <ComponentWillUnmountUseEffect />
+      {/* <ComponentWillUnmountUseEffect /> */}
+      {/* <OrderedList /> */}
+      {/* <UnorderedOrdered /> */}
+      {/* <DropDown /> */}
+      <PlayerInfo />
     </div>
   );
 };
