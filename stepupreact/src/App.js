@@ -30,6 +30,8 @@ import OrderedList from "./Components/ListAndKeys/OrderedList";
 import UnorderedOrdered from "./Components/ListAndKeys/UnorderedOrdered";
 import {DropDown} from "./Components/ListAndKeys/DropDown";
 import {PlayerInfo} from "./Components/ListAndKeys/PlayerInfo";
+import {TableList} from "./Components/ListAndKeys/TableList";
+import {ListKeysComponent} from "./Components/ListAndKeys/ListKeysComponent";
 // import Parent from "./Components/HOC/Parent";
 // import {Parent} from "./Components/ChildToParent";
 // import Parent from "./Components/PtoC";
@@ -132,7 +134,9 @@ const App = () => {
       {/* <OrderedList /> */}
       {/* <UnorderedOrdered /> */}
       {/* <DropDown /> */}
-      <PlayerInfo />
+      {/* <PlayerInfo /> */}
+      {/* <TableList /> */}
+      <ListKeysComponent />
     </div>
   );
 };
