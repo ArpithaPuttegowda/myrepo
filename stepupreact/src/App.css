@@ -1,16 +1,57 @@
-#box,#boxC{
+#box,
+#boxC {
   border: 1px solid rgb(47, 19, 147);
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
 
-.cb{
-  color:blue ;
+.cb {
+  color: blue;
 }
-.cp{
+.cp {
   color: pink;
 }
-.cr{
+.cr {
   color: red;
+}
+body {
+  margin: 0px;
+}
+
+#header {
+  background: blue;
+  color: white;
+  font-size: 55px;
+  font-family: cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+#footer {
+  background: blue;
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+#menu {
+  background: yellowgreen;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+#menu > a {
+  margin: 10px;
 }
