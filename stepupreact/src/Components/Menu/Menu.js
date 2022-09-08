@@ -1,7 +1,8 @@
-import React from "react";
-import {Link, BrowserRouter, Routes, Route} from "react-router-dom";
-import {Aboutus} from "../Routings/Aboutus";
+import React, {lazy, Suspense} from "react";
+import {Link, BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {Home} from "../Routings/Home";
+const Aboutus = lazy(() => import("../Routings/Aboutus"));
+const ExampleUseMemo = lazy(() => import("../Hooks/ExampleUseMemo"));
 
 export const Menu = () => {
   const linkData = [
@@ -10,19 +11,28 @@ export const Menu = () => {
     {href: "/hooks", content: "Hooks"},
     {href: "/redux", content: "Redux"}
   ];
+  const routeData = [
+    {element: <Home />, path: "/home"},
+    {element: <Aboutus />, path: "/about"},
+    {element: <ExampleUseMemo />, path: "/hooks"},
+    {element: <Navigate to="/home" />, path: "*"}
+  ];
   return (
     <div>
       <BrowserRouter>
-        <div id="menu">
-          {linkData?.map((obj) => {
-            const {href, content} = obj;
-            return <Link to={href}>{content}</Link>;
-          })}
-        </div>
-        <Routes>
-          <Route element={<Home />} path="/home" />
-          <Route element={<Aboutus />} path="/about" />
-        </Routes>
+        <Suspense fallback="loading...">
+          <div id="menu">
+            {linkData?.map((obj) => {
+              const {href, content} = obj;
+              return <Link to={href}>{content}</Link>;
+            })}
+          </div>
+          <Routes>
+            {routeData.map((obj) => {
+              return <Route element={obj.element} path={obj.path} />;
+            })}
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </div>
   );
