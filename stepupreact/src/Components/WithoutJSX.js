@@ -1,7 +1,7 @@
-import React from "react";
+import React, {createElement} from "react";
 
 export const WithoutJSX = () => {
-  return React.createElement(
+  return createElement(
     "div",
     {id: "myName", className: "name"},
     "Sachin Tendulkar"
