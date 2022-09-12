@@ -1,6 +1,8 @@
 import React, {lazy, Suspense} from "react";
 import {Link, BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {Home} from "../Routings/Home";
+import WithoutRedux from "../WithoutRedux/WithoutRedux";
+
 const Aboutus = lazy(() => import("../Routings/Aboutus"));
 const ExampleUseMemo = lazy(() => import("../Hooks/ExampleUseMemo"));
 
@@ -9,13 +11,14 @@ export const Menu = () => {
     {href: "/home", content: "Home"},
     {href: "/about", content: "About"},
     {href: "/hooks", content: "Hooks"},
-    {href: "/redux", content: "Redux"}
+    {href: "/withoutRedux", content: "withoutRedux"}
   ];
   const routeData = [
     {element: <Home />, path: "/home"},
     {element: <Aboutus />, path: "/about"},
     {element: <ExampleUseMemo />, path: "/hooks"},
-    {element: <Navigate to="/home" />, path: "*"}
+    {element: <Navigate to="/home" />, path: "*"},
+    {element: <WithoutRedux />, path: "/withoutRedux"}
   ];
   return (
     <div>
