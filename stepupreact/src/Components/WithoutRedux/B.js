@@ -5,6 +5,7 @@ export const B = ({f2}) => {
   const handleLoc = () => {
     let loc = locRef.current.value;
     f2(loc);
+    locRef.current.value = "";
   };
   return (
     <div>

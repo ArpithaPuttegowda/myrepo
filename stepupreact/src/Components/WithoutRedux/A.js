@@ -4,6 +4,7 @@ export const A = ({f1}) => {
   const nameRef = useRef();
   const handleName = () => {
     let name = nameRef.current.value;
+    nameRef.current.value = "";
     f1(name);
   };
   return (
