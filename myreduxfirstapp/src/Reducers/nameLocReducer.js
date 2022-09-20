@@ -7,6 +7,18 @@ const nameLocReducer = (state = initialData, action) => {
       name: action.payload
     };
   }
+  if (action.type === "LOC") {
+    state = {
+      ...state,
+      loc: action.payload
+    };
+  }
+  if (action.type === "POSTS") {
+    state = {
+      ...state,
+      data: action.data
+    };
+  }
   console.log(state, "updated state");
   return state;
 };

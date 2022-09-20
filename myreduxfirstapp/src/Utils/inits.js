@@ -1,4 +1,5 @@
 export const initialData = {
   name: "",
-  loc: ""
+  loc: "",
+  data: []
 };
