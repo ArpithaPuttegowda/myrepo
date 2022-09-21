@@ -13,6 +13,7 @@ const nameLocReducer = (state = initialData, action) => {
       loc: action.payload
     };
   }
+
   if (action.type === "POSTS") {
     state = {
       ...state,

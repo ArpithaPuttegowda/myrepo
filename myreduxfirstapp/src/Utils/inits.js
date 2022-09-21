@@ -3,3 +3,8 @@ export const initialData = {
   loc: "",
   data: []
 };
+
+export const initDataClass = {
+  name: "",
+  loc: ""
+};
