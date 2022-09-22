@@ -1,26 +1,3 @@
-
-
-npx create-react-app myapp
-
-
-myapp
-    npm i redux react-redux @reduxjs/toolkit
-
-
-
-parent 
-A
-B
-C
-
-this.state={
-    name:"",
-    loc:""
-}
-
-
- dispatch =>Reducer=>store
-global store / state
-Name, Loc
-
-C
+npx create-react-app myapp myapp npm i redux react-redux @reduxjs/toolkit parent
+A B C this.state={ name:"", loc:"" } dispatch =>Reducer=>store global store /
+state Name, Loc C

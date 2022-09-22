@@ -8,6 +8,12 @@ export const nameLoc = (state = initDataClass, action) => {
         name: action.name
       };
       break;
+    case "LOC_CLASS":
+      state = {
+        ...state,
+        loc: action.payload
+      };
+      break;
     default:
       return state;
   }
