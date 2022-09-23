@@ -1,10 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit";
 import {nameLocReducer} from "../Reducers/nameLocReducer";
 import {nameLoc} from "../Reducers/nameLocReducerClass";
+import nameLocReducerRTK from "../ReduxToolkit/nameLocSlice";
 
 const rootReducer = {
   nameLocReducer: nameLocReducer,
-  nameLocClass: nameLoc
+  nameLocClass: nameLoc,
+  nLReducerRTK: nameLocReducerRTK
 };
 
 const store = configureStore({

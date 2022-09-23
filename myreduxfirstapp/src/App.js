@@ -5,6 +5,7 @@ import {C} from "./Components/C";
 import ReduxSampleClass from "./Components/ClassCompRedux/ReduxSampleClass";
 import {GetData} from "./Components/GetData";
 import {RenderPosts} from "./Components/RenderPosts";
+import {ReduxToolKitSample} from "./ReduxToolkit/ReduxToolKitSample";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <C />
       <GetData />
       <RenderPosts /> */}
-      <ReduxSampleClass />
+      {/* <ReduxSampleClass /> */}
+      <ReduxToolKitSample />
     </div>
   );
 }
