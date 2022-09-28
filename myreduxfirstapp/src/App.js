@@ -1,3 +1,4 @@
+import {useSelector} from "react-redux";
 import "./App.css";
 import {A} from "./Components/A";
 import {B} from "./Components/B";
@@ -8,8 +9,10 @@ import {RenderPosts} from "./Components/RenderPosts";
 import {AjaxExample} from "./ReduxToolkit/AjaxExample";
 import {ReduxToolKitSample} from "./ReduxToolkit/ReduxToolKitSample";
 import {Registration} from "./ReduxToolkit/Registration";
+import {UpdateColor} from "./ReduxToolkit/UpdateColor";
 
 function App() {
+  const state = useSelector((state) => state);
   return (
     <div>
       {/* <A />
@@ -20,7 +23,9 @@ function App() {
       {/* <ReduxSampleClass /> */}
       {/* <ReduxToolKitSample /> */}
       {/* <AjaxExample /> */}
-      <Registration />
+      {/* <Registration /> */}
+      <UpdateColor />
+      <h1>Updated color...{state.updateColorReducer.color}</h1>
     </div>
   );
 }

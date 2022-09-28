@@ -1,12 +1,14 @@
 import {createSlice} from "@reduxjs/toolkit";
 
+const initialState = {
+  name: "",
+  pwd: "",
+  email: ""
+};
+
 const registrationSlice = createSlice({
   name: "REG",
-  initialState: {
-    name: "",
-    pwd: "",
-    email: ""
-  },
+  initialState,
   reducers: {
     setName: (state, action) => {
       state.name = action.payload;

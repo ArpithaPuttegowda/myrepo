@@ -3,14 +3,16 @@ import {nameLocReducer} from "../Reducers/nameLocReducer";
 import {nameLoc} from "../Reducers/nameLocReducerClass";
 import nameLocReducerRTK from "../ReduxToolkit/nameLocSlice";
 import ajaxSlice from "../ReduxToolkit/ajaxSlice";
-import registrationSlice from "../ReduxToolkit/RegistrationSlice";
+import registrationReducer from "../ReduxToolkit/RegistrationSlice";
+import updateColorReducer from "../ReduxToolkit/UpdateColorSlice";
 
 const rootReducer = {
   nameLocReducer: nameLocReducer,
   nameLocClass: nameLoc,
   nLReducerRTK: nameLocReducerRTK,
   ajaxSliceRTK: ajaxSlice,
-  registration: registrationSlice
+  registration: registrationReducer,
+  updateColorReducer
 };
 
 const store = configureStore({

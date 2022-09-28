@@ -4,14 +4,15 @@ import {TemplateRegistration} from "./TemplateRegistration";
 
 export const Registration = () => {
   const state = useSelector((state) => state);
+  console.log(state, "completeState");
   const handleReg = () => {
     const name = state.registration.name;
     const pwd = state.registration.pwd;
     const email = state.registration.email;
     console.log({
-      name,
-      pwd,
-      email
+      name: name,
+      pwd: pwd,
+      email: email
     });
   };
   return (
