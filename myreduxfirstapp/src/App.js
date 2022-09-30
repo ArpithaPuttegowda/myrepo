@@ -4,6 +4,8 @@ import {A} from "./Components/A";
 import {B} from "./Components/B";
 import {C} from "./Components/C";
 import ReduxSampleClass from "./Components/ClassCompRedux/ReduxSampleClass";
+import {ExampleUserReducer} from "./Components/ExampleUseReducer/ExampleUserReducer";
+import {IncDecCount} from "./Components/ExampleUseReducer/IncDecCount";
 import {GetData} from "./Components/GetData";
 import {RenderPosts} from "./Components/RenderPosts";
 import {AjaxExample} from "./ReduxToolkit/AjaxExample";
@@ -24,8 +26,10 @@ function App() {
       {/* <ReduxToolKitSample /> */}
       {/* <AjaxExample /> */}
       {/* <Registration /> */}
-      <UpdateColor />
-      <h1>Updated color...{state.updateColorReducer.color}</h1>
+      {/* <UpdateColor /> */}
+      {/* <h1>Updated color...{state.updateColorReducer.color}</h1> */}
+      {/* <IncDecCount /> */}
+      <ExampleUserReducer />
     </div>
   );
 }
